@@ -2,9 +2,9 @@ language: node_js
 node_js:
   - "7"
 install:
-  - npm install
+  - npm install npmbox
 after_success:
-  - tar -zcvf archive.tar.gz node_modules/
+  - npmbox npmbox
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "Travis CI"
   - git add .
