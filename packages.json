@@ -56,8 +56,6 @@
     "redux-immutable": "^4.0.0",
     "redux-thunk": "^2.1.0",
     "reselect": "^3.0.1"
-  },
-  "devDependencies": {
     "babel-eslint": "^6.1.2",
     "babel-istanbul": "^0.12.2",
     "babel-loader": "^6.2.5",
