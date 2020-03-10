@@ -7,12 +7,8 @@ script: npm run test
 after_success:
   - rm ./boxes/*.npmbox
   - npmbox npmbox --target boxes/npmbox
-  - npmbox deps/dep1.json --target boxes/dep1
-  - npmbox deps/dep2.json --target boxes/dep2
-  - npmbox deps/dep3.json --target boxes/dep3
-  - npmbox deps/dep4.json --target boxes/dep4
-  - npmbox deps/devdep1.json --target boxes/devdep1
-  - npmbox deps/devdep2.json --target boxes/devdep2
+  - npmbox deps/dep.json --target boxes/dep
+  - npmbox deps/devdep.json --target boxes/devdep
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "Travis CI"
   - git add .
