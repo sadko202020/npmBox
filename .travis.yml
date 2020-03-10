@@ -5,11 +5,11 @@ install:
   - npm install
 script: npm run test
 after_success:
-  - npmbox npmBox --target boxes/npmbox.npmbox
-  - npmbox deps/dep1.json --target boxes/dep1.npmbox
-  - npmbox deps/dep2.json --target boxes/dep2.npmbox
-  - npmbox deps/devdep1.json --target boxes/devdep1.npmbox
-  - npmbox deps/devdep2.json --target boxes/devdep2.npmbox
+  - npmbox npmbox --target boxes/npmbox
+  - npmbox deps/dep1.json --target boxes/dep1
+  - npmbox deps/dep2.json --target boxes/dep2
+  - npmbox deps/devdep1.json --target boxes/devdep1
+  - npmbox deps/devdep2.json --target boxes/devdep2
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "Travis CI"
   - git add .
