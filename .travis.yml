@@ -3,6 +3,7 @@ node_js:
   - "7"
 install:
   - npm install -g npmbox
+script: npm test
 after_success:
   - npmbox npmbox
   - git config --global user.email "travis@travis-ci.org"
