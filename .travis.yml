@@ -5,6 +5,7 @@ install:
   - npm install
 script: npm run test
 after_success:
+  - rm ./boxes/*.npmbox
   - npmbox npmbox --target boxes/npmbox
   - npmbox deps/dep1.json --target boxes/dep1
   - npmbox deps/dep2.json --target boxes/dep2
