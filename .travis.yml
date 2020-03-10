@@ -18,4 +18,4 @@ after_success:
   - git push origin HEAD:master
 env:
   global:
-    - GH_REF: github.com/sadko202020/npmBox.git
+    - GH_REF: github.com/sadko202020/gettingNpmPackages.git
