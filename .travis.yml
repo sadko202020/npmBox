@@ -5,7 +5,7 @@ install:
   - npm install
 script: npm run test
 after_success:
-  - npmbox dev.json --target dev.npmbox
+  - npmbox dep.json --target dep.npmbox
   - npmbox devdep.json --target devdep.npmbox
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "Travis CI"
