@@ -8,6 +8,8 @@ after_success:
   - npmbox npmbox --target boxes/npmbox
   - npmbox deps/dep1.json --target boxes/dep1
   - npmbox deps/dep2.json --target boxes/dep2
+  - npmbox deps/dep3.json --target boxes/dep3
+  - npmbox deps/dep4.json --target boxes/dep4
   - npmbox deps/devdep1.json --target boxes/devdep1
   - npmbox deps/devdep2.json --target boxes/devdep2
   - git config --global user.email "travis@travis-ci.org"
