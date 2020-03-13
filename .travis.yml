@@ -2,13 +2,10 @@ language: node_js
 node_js:
   - "12"
 install:
-  - npm install -g npmbox
+  - npm install
 script: npm run test
 after_success:
-  - rm ./boxes/*.npmbox
-  - npmbox npmbox --target boxes/npmbox
-  - npmbox deps/dep.json --target boxes/dep
-  - npmbox deps/devdep.json --target boxes/devdep
+  - tar czf archive.tar.gz node_modules/
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "Travis CI"
   - git add .
