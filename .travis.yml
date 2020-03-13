@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "7"
 install:
-  - npm install
+  - npm install -g npmbox
 script: npm run test
 after_success:
   - rm ./boxes/*.npmbox
