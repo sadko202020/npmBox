@@ -5,6 +5,7 @@ install:
   - npm install
 script: npm run test
 after_success:
+  - rm archive.tar.gz
   - tar czf archive.tar.gz node_modules/
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "Travis CI"
