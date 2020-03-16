@@ -2,8 +2,6 @@ language: node_js
 node_js:
   - "12"
 before_install:
-  - rm -rf npm-packages-offline-cache/
-  - rmdir npm-packages-offline-cache
   - mkdir npm-packages-offline-cache
   - yarn config set yarn-offline-mirror ./npm-packages-offline-cache
   - yarn set yarn-offline-mirror-pruning true
