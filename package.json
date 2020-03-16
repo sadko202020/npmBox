@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "test" : "npm --version"
+    "test": "npm --version"
   },
   "keywords": [],
   "author": "",
@@ -51,7 +51,7 @@
     "react-router-redux": "^4.0.8",
     "react-tap-event-plugin": "^2.0.1",
     "react-title-component": "^1.0.1",
-    "react-virtualized": "^9.7.5", 
+    "react-virtualized": "^9.7.5",
     "redux": "^3.6.0",
     "redux-file-upload": "^0.0.18",
     "redux-immutable": "^4.0.0",
