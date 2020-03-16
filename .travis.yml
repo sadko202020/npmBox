@@ -3,6 +3,14 @@ node_js:
   - "12"
 install:
   - npm install
+  - npm install react@latest
+  - npm install redux@latest
+  - npm install webpack@latest
+  - npm install webpack-cli@latest
+  - npm install react-dom@latest
+  - npm install babel@latest
+  - npm install babel-loader@latest
+  - npm install babel-preset-react@latest
 script: npm run test
 after_success:
   - rm archive.tar.gz
