@@ -2,8 +2,8 @@ language: node_js
 node_js:
   - "12"
 before_install:
-  - rm -r npm-packages-offline-cache
   - rm yarn.lock
+  - mkdir npm-packages-offline-cache
 install:
   - sh ./packs.sh
 script: npm run test
