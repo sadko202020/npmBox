@@ -2,10 +2,7 @@ language: node_js
 node_js:
   - "12"
 before_install:
-  - mkdir npm-packages-offline-cache
-  - yarn config set yarn-offline-mirror ./npm-packages-offline-cache
-  - yarn config set yarn-offline-mirror-pruning true
-  - mv ~/.yarnrc ./
+  - rm -r npm-packages-offline-cache
 install:
   - yarn
   - yarn add react@latest
@@ -20,7 +17,8 @@ script: npm run test
 after_success:
   - ls npm-packages-offline-cache
   - rm archive.tar.gz
-  - tar czf archive.tar.gz npm-packages-offline-cache/
+  - tar czf archive.tar.gz npm-packages-offline-cache/ yarn.lock
+  - rm -r npm-packages-offline-cache
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "Travis CI"
   - git add .
