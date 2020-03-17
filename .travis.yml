@@ -3,6 +3,7 @@ node_js:
   - "12"
 before_install:
   - rm -r npm-packages-offline-cache
+  - rm yarn.lock
 install:
   - yarn
   - yarn add react@latest
