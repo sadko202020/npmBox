@@ -1,0 +1,13 @@
+{
+  "name": "gettingNpmPackages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "test": "npm --version"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
