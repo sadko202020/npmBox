@@ -5,15 +5,7 @@ before_install:
   - rm -r npm-packages-offline-cache
   - rm yarn.lock
 install:
-  - yarn
-  - yarn add react@latest
-  - yarn add redux@latest
-  - yarn add webpack@latest
-  - yarn add webpack-cli@latest
-  - yarn add react-dom@latest
-  - yarn add babel@latest
-  - yarn add babel-loader@latest
-  - yarn add babel-preset-react@latest
+  - sh ./packs.sh
 script: npm run test
 after_success:
   - ls npm-packages-offline-cache
