@@ -10,7 +10,7 @@ script: npm run test
 after_success:
   - ls npm-packages-offline-cache
   - rm archive.tar.gz
-  - tar czf archive.tar.gz npm-packages-offline-cache/ yarn.lock
+  - tar czf archive.tar.gz npm-packages-offline-cache/ yarn.lock .yarnrc packages.json
   - rm -r npm-packages-offline-cache
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "Travis CI"
