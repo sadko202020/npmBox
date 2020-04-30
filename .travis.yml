@@ -12,6 +12,7 @@ install:
 script: npm run test
 after_success:
   - tar czf archive.tar.gz npm-packages-offline-cache/ yarn.lock .yarnrc package.json
+  - tar czf modules.tar.gz node_modules
   - rm -r npm-packages-offline-cache
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "Travis CI"
